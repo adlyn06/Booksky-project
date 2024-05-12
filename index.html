@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1><i>Booksky</i></h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+             <h2>Rich Dad Poor Dad</h2>
+             <h5>Robert</h5>
+             <p>"Rich Dad Poor Dad" contrasts financial philosophies of two dads, highlighting the importance of financial education, investing, and entrepreneurship for building wealth. It challenges conventional notions about money and work.</p>
+             <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input"> <br>
+            <input type="text" placeholder="Book Author" id="book-author-input"> <br>
+            <textarea type="text" placeholder="Short Description" id="short-description-input"></textarea>  <br>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="hello.js"></script>
+</body>
+</html>
